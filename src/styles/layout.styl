@@ -88,6 +88,9 @@ div.container.container--container-outer#header
     
     @media screen and (min-height 800px)
         min-height 20vh
+        
+    @media screen and (min-height 800px) and (max-width 800px)
+        min-height 275px
 
 div.header
     flex-flow row wrap
@@ -117,7 +120,7 @@ div.header
             max-width 65%
             
             @media screen and (max-width 800px)
-                max-width unset
+                max-width 250px
             
         h1
             font-weight 400
@@ -156,6 +159,9 @@ div.container.container--container-outer#form-section
         align-items flex-start
         
         max-width 640px
+        
+        @media screen and (max-width 680px)
+            max-width 90%
         
         @media screen and (min-height 800px)
             min-height calc(38vh - 98px)
@@ -216,6 +222,9 @@ div.container.container--container-outer#where
         @media screen and (min-height 800px)
             min-height 16vh
 
+        @media screen and (max-width 500px) and (min-height 800px)
+            min-height 200px
+            
         p
             color grey
             
@@ -226,17 +235,39 @@ div.container.container--container-outer#where
             flex-flow row wrap
             justify-content space-between
             align-items center
+            
+            
+            @media screen and (max-width 500px)
+            
+                flex-flow column wrap
+                justify-content center
+                
+                margin-top 0
+                
+                img
+                    margin-top 30px
                 
             
 /* -- FOOTER -- */
 div.container.container--container-outer#footer
     min-height 0
     
+    @media screen and (max-width 500px) and (min-height 800px)
+        min-height 70px
+    
     @media screen and (min-height 800px)
         min-height 4vh
 
     div.container.container--container-inner
         margin-top 13px
+        
+        div.container.text-container--center
+            @media screen and (max-width 500px)
+                flex-flow column wrap
+                justify-content center
+                align-items center
+        
+
         span, a
             color $grey
             
@@ -245,3 +276,6 @@ div.container.container--container-outer#footer
             width 2px
             background-color $grey
             margin 0 20px
+            
+            @media screen and (max-width 500px)
+                display none

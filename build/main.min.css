@@ -150,6 +150,11 @@ div.container.container--container-outer#header {
     min-height: 20vh;
   }
 }
+@media screen and (min-height: 800px) and (max-width: 800px) {
+  div.container.container--container-outer#header {
+    min-height: 275px;
+  }
+}
 div.header {
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
@@ -227,7 +232,7 @@ div.header--header-part .text-container {
 }
 @media screen and (max-width: 800px) {
   div.header--header-part .text-container {
-    max-width: unset;
+    max-width: 250px;
   }
 }
 div.header--header-part h1 {
@@ -275,6 +280,11 @@ div.container.container--container-outer#form-section div.container.container--c
   -webkit-align-items: flex-start;
   align-items: flex-start;
   max-width: 640px;
+}
+@media screen and (max-width: 680px) {
+  div.container.container--container-outer#form-section div.container.container--container-inner {
+    max-width: 90%;
+  }
 }
 @media screen and (min-height: 800px) {
   div.container.container--container-outer#form-section div.container.container--container-inner {
@@ -342,6 +352,11 @@ div.container.container--container-outer#form-section div.container.container--c
     min-height: 16vh;
   }
 }
+@media screen and (max-width: 500px) and (min-height: 800px) {
+  div.container.container--container-outer#where div.container.container--container-inner {
+    min-height: 200px;
+  }
+}
 div.container.container--container-outer#where div.container.container--container-inner p {
   color: #808080;
 }
@@ -370,8 +385,36 @@ div.container.container--container-outer#where div.container.container--containe
   -webkit-align-items: center;
   align-items: center;
 }
+@media screen and (max-width: 500px) {
+  div.container.container--container-outer#where div.container.container--container-inner div.logo-container {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+  div.container.container--container-outer#where div.container.container--container-inner div.logo-container img {
+    margin-top: 30px;
+  }
+}
 div.container.container--container-outer#footer {
   min-height: 0;
+}
+@media screen and (max-width: 500px) and (min-height: 800px) {
+  div.container.container--container-outer#footer {
+    min-height: 70px;
+  }
 }
 @media screen and (min-height: 800px) {
   div.container.container--container-outer#footer {
@@ -380,6 +423,31 @@ div.container.container--container-outer#footer {
 }
 div.container.container--container-outer#footer div.container.container--container-inner {
   margin-top: 13px;
+}
+@media screen and (max-width: 500px) {
+  div.container.container--container-outer#footer div.container.container--container-inner div.container.text-container--center {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
 }
 div.container.container--container-outer#footer div.container.container--container-inner span,
 div.container.container--container-outer#footer div.container.container--container-inner a {
@@ -390,4 +458,9 @@ div.container.container--container-outer#footer div.container.container--contain
   width: 2px;
   background-color: #8f8888;
   margin: 0 20px;
+}
+@media screen and (max-width: 500px) {
+  div.container.container--container-outer#footer div.container.container--container-inner div.divider-small {
+    display: none;
+  }
 }
