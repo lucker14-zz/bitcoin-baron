@@ -59,7 +59,10 @@
                     <input type="text" id="drip-Firstname" name="fields[Firstname]" value="" />
                 </div>
                 <div>
-                    <input type="submit" value="Sign Up" data-drip-attribute="sign-up-button" />
+                    <div id="html_element"></div>
+                </div>
+                <div>
+                    <input type="submit" disabled="disabled" id='form_submit' value="Sign Up" data-drip-attribute="sign-up-button" />
                 </div>
             </form>
         </div>
@@ -100,6 +103,27 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(dc, s);
       })();
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
+
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
+          'callback': verifyCallback,
+          'theme': 'dark'
+        });
+      };
+
+      function verifyCallback(arg){
+        console.log(arg)
+        var btn = document.querySelector('#form_submit')
+
+        btn.removeAttribute('disabled')
+      }
     </script>
 
     <script type="text/javascript" src="scripts.min.js"></script>

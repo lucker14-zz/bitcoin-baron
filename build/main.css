@@ -267,6 +267,9 @@ div.container.container--container-outer#form-section div.container.container--c
   font-weight: bold;
   font-size: 14px;
 }
+div.container.container--container-outer#form-section div.container.container--container-inner form input[type='submit'][disabled='disabled'] {
+  background-color: #8f8888;
+}
 div.container.container--container-outer#form-section div.container.container--container-inner form div {
   margin-bottom: 20px;
 }
