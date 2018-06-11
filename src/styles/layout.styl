@@ -68,8 +68,12 @@ div.container
         justify-content center
         align-items center
         
+        @media screen and (max-width 1280px)
+            width 100%
+        
         &--row
             flex-flow row wrap
+            
     
 .text-container
     &--center
@@ -80,53 +84,82 @@ div.container
 /* -- HEADER -- */
 div.container.container--container-outer#header
     max-height 350px
-    min-height 250px
+    min-height 150px
     
-    @media screen and (min-height 1050px)
-        min-height 30vh
+    @media screen and (min-height 800px)
+        min-height 20vh
 
 div.header
     flex-flow row wrap
     justify-content center
     align-items center
     
+    @media screen and (max-width 800px)
+        flex-flow column wrap
+    
     &--header-part
         flex-flow: column wrap
         justify-content center
         align-items center
         
-        width 50%
-        max-width: 638px
+        width 47%
+        max-width: 47%
+        
+        @media screen and (max-width 800px)
+            width 90%
+            max-width unset
+            
+        img
+            @media screen and (max-width 1280px)
+                height 80px
         
         .text-container
             max-width 65%
+            
+            @media screen and (max-width 800px)
+                max-width unset
             
         h1
             font-weight 400
             font-size 36px
             
+            @media screen and (max-width 1280px)
+                font-size 24px
+            
         div.absolute
             span
                 color white
                 font-size 20px
+                
+                @media screen and (max-width 1280px)
+                    font-size 16px
         
 
 .divider
     width 2px
-    height 150px
+    height 120px
     background-color $black
+    
+    @media screen and (max-width 800px)
+        height 2px
+        width 90%
+        margin 20px auto
+        float none
     
 
 /* -- FORM SECTION -- */
 div.container.container--container-outer#form-section
     div.container.container--container-inner
+        
+
         justify-content center
         align-items flex-start
         
         max-width 640px
         
-        @media screen and (min-height 1050px)
-            min-height 50vh
+        @media screen and (min-height 800px)
+            min-height calc(38vh - 98px)
+            padding 4vh 0
 
         h2
             color yellow
@@ -137,6 +170,9 @@ div.container.container--container-outer#form-section
             color $grey
             margin-top 25px
             max-width 80%
+            
+            @media screen and (max-width 500px)
+                max-width 100%
             
         form
             margin-top 20px
@@ -154,6 +190,9 @@ div.container.container--container-outer#form-section
                 box-shadow 0 0 5px rgba(255, 255, 255, 0.75)
                 width 60%
                 padding 10px 5px
+                
+                @media screen and (max-width 800px)
+                    width 100%
                 
             input[type='submit']
                 background-color $yellow
@@ -174,7 +213,7 @@ div.container.container--container-outer#form-section
 /* -- WHERE CONTAINER -- */
 div.container.container--container-outer#where
     div.container.container--container-inner
-        @media screen and (min-height 1050px)
+        @media screen and (min-height 800px)
             min-height 16vh
 
         p
@@ -193,7 +232,7 @@ div.container.container--container-outer#where
 div.container.container--container-outer#footer
     min-height 0
     
-    @media screen and (min-height 1050px)
+    @media screen and (min-height 800px)
         min-height 4vh
 
     div.container.container--container-inner

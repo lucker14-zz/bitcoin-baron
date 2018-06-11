@@ -121,6 +121,11 @@ div.container--container-inner {
   -webkit-align-items: center;
   align-items: center;
 }
+@media screen and (max-width: 1280px) {
+  div.container--container-inner {
+    width: 100%;
+  }
+}
 div.container--container-inner--row {
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
@@ -138,11 +143,11 @@ div.container--container-inner--row {
 }
 div.container.container--container-outer#header {
   max-height: 350px;
-  min-height: 250px;
+  min-height: 150px;
 }
-@media screen and (min-height: 1050px) {
+@media screen and (min-height: 800px) {
   div.container.container--container-outer#header {
-    min-height: 30vh;
+    min-height: 20vh;
   }
 }
 div.header {
@@ -168,6 +173,19 @@ div.header {
   -webkit-align-items: center;
   align-items: center;
 }
+@media screen and (max-width: 800px) {
+  div.header {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+}
 div.header--header-part {
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
@@ -190,24 +208,58 @@ div.header--header-part {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  width: 50%;
-  max-width: 638px;
+  width: 47%;
+  max-width: 47%;
+}
+@media screen and (max-width: 800px) {
+  div.header--header-part {
+    width: 90%;
+    max-width: unset;
+  }
+}
+@media screen and (max-width: 1280px) {
+  div.header--header-part img {
+    height: 80px;
+  }
 }
 div.header--header-part .text-container {
   max-width: 65%;
+}
+@media screen and (max-width: 800px) {
+  div.header--header-part .text-container {
+    max-width: unset;
+  }
 }
 div.header--header-part h1 {
   font-weight: 400;
   font-size: 36px;
 }
+@media screen and (max-width: 1280px) {
+  div.header--header-part h1 {
+    font-size: 24px;
+  }
+}
 div.header--header-part div.absolute span {
   color: #fff;
   font-size: 20px;
 }
+@media screen and (max-width: 1280px) {
+  div.header--header-part div.absolute span {
+    font-size: 16px;
+  }
+}
 .divider {
   width: 2px;
-  height: 150px;
+  height: 120px;
   background-color: #000;
+}
+@media screen and (max-width: 800px) {
+  .divider {
+    height: 2px;
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+  }
 }
 div.container.container--container-outer#form-section div.container.container--container-inner {
   -webkit-box-pack: center;
@@ -224,9 +276,10 @@ div.container.container--container-outer#form-section div.container.container--c
   align-items: flex-start;
   max-width: 640px;
 }
-@media screen and (min-height: 1050px) {
+@media screen and (min-height: 800px) {
   div.container.container--container-outer#form-section div.container.container--container-inner {
-    min-height: 50vh;
+    min-height: calc(38vh - 98px);
+    padding: 4vh 0;
   }
 }
 div.container.container--container-outer#form-section div.container.container--container-inner h2 {
@@ -238,6 +291,11 @@ div.container.container--container-outer#form-section div.container.container--c
   color: #8f8888;
   margin-top: 25px;
   max-width: 80%;
+}
+@media screen and (max-width: 500px) {
+  div.container.container--container-outer#form-section div.container.container--container-inner p {
+    max-width: 100%;
+  }
 }
 div.container.container--container-outer#form-section div.container.container--container-inner form {
   margin-top: 20px;
@@ -258,6 +316,12 @@ div.container.container--container-outer#form-section div.container.container--c
   width: 60%;
   padding: 10px 5px;
 }
+@media screen and (max-width: 800px) {
+  div.container.container--container-outer#form-section div.container.container--container-inner form input[type='email'],
+  div.container.container--container-outer#form-section div.container.container--container-inner form input[type='text'] {
+    width: 100%;
+  }
+}
 div.container.container--container-outer#form-section div.container.container--container-inner form input[type='submit'] {
   background-color: #f7d856;
   color: #000;
@@ -273,7 +337,7 @@ div.container.container--container-outer#form-section div.container.container--c
 div.container.container--container-outer#form-section div.container.container--container-inner form div {
   margin-bottom: 20px;
 }
-@media screen and (min-height: 1050px) {
+@media screen and (min-height: 800px) {
   div.container.container--container-outer#where div.container.container--container-inner {
     min-height: 16vh;
   }
@@ -309,7 +373,7 @@ div.container.container--container-outer#where div.container.container--containe
 div.container.container--container-outer#footer {
   min-height: 0;
 }
-@media screen and (min-height: 1050px) {
+@media screen and (min-height: 800px) {
   div.container.container--container-outer#footer {
     min-height: 4vh;
   }
