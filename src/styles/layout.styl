@@ -110,7 +110,7 @@ div.header
 
 .divider
     width 2px
-    height: 190px
+    height 150px
     background-color $black
     
 
@@ -141,7 +141,22 @@ div.container.container--container-outer#where
             
         div.logo-container
             width 450px
+            margin-top 30px
             
             flex-flow row wrap
             justify-content space-between
             align-items center
+            
+/* -- FOOTER -- */
+div.container.container--container-outer#footer
+    min-height 0
+    div.container.container--container-inner
+        margin-top 18px
+        span, a
+            color $grey
+            
+        div.divider-small
+            height 18px
+            width 2px
+            background-color $grey
+            margin 0 20px

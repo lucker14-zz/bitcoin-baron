@@ -202,7 +202,7 @@ div.header--header-part div.absolute span {
 }
 .divider {
   width: 2px;
-  height: 190px;
+  height: 150px;
   background-color: #000;
 }
 div.container.container--container-outer#form-section div.container.container--container-inner {
@@ -235,6 +235,7 @@ div.container.container--container-outer#where div.container.container--containe
 }
 div.container.container--container-outer#where div.container.container--container-inner div.logo-container {
   width: 450px;
+  margin-top: 30px;
   -webkit-box-orient: horizontal;
   -moz-box-orient: horizontal;
   -o-box-orient: horizontal;
@@ -256,4 +257,20 @@ div.container.container--container-outer#where div.container.container--containe
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+div.container.container--container-outer#footer {
+  min-height: 0;
+}
+div.container.container--container-outer#footer div.container.container--container-inner {
+  margin-top: 18px;
+}
+div.container.container--container-outer#footer div.container.container--container-inner span,
+div.container.container--container-outer#footer div.container.container--container-inner a {
+  color: #8f8888;
+}
+div.container.container--container-outer#footer div.container.container--container-inner div.divider-small {
+  height: 18px;
+  width: 2px;
+  background-color: #8f8888;
+  margin: 0 20px;
 }
