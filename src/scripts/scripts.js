@@ -1,1 +1,1 @@
-console.log('YOLO barons')
+var yolo = true;

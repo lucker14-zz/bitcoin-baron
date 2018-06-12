@@ -13,6 +13,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-feature-settings: "liga" 0;
 }
 *:focus,
 *:active {
@@ -46,6 +47,7 @@ label {
   padding: 0;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 ul,
 li {
@@ -263,6 +265,7 @@ div.header--header-part h1 {
 div.header--header-part div.absolute span {
   color: #fff;
   font-size: 20px;
+  letter-spacing: 1.18px;
 }
 @media screen and (max-width: 1280px) {
   div.header--header-part div.absolute span {
@@ -272,7 +275,7 @@ div.header--header-part div.absolute span {
 .divider {
   width: 2px;
   height: 120px;
-  background-color: #000;
+  background-color: #231f20;
 }
 @media screen and (min-height: 1000px) and (min-width: 1300px) {
   .divider {
@@ -345,7 +348,7 @@ div.container.container--container-outer#form-section div.container.container--c
 div.container.container--container-outer#form-section div.container.container--container-inner form input[type='email'],
 div.container.container--container-outer#form-section div.container.container--container-inner form input[type='text'] {
   background-color: #000;
-  border: 2px solid #8f8888;
+  border: 1px solid #8f8888;
   border-radius: 2px;
   -webkit-box-shadow: 0 0 5px rgba(255,255,255,0.75);
   box-shadow: 0 0 5px rgba(255,255,255,0.75);
@@ -486,6 +489,7 @@ div.container.container--container-outer#footer div.container.container--contain
 div.container.container--container-outer#footer div.container.container--container-inner span,
 div.container.container--container-outer#footer div.container.container--container-inner a {
   color: #8f8888;
+  font-size: 12px;
 }
 div.container.container--container-outer#footer div.container.container--container-inner div.divider-small {
   height: 18px;

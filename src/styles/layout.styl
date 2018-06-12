@@ -11,6 +11,7 @@ body, html
 *
     font-family "Roboto"
     box-sizing border-box
+    font-feature-settings "liga" 0
 
     &:focus, &:active
         outline none !important
@@ -33,6 +34,7 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea, label
     padding 0
     text-decoration none
     -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
 
 
 ul, li
@@ -143,6 +145,7 @@ div.header
             span
                 color white
                 font-size 20px
+                letter-spacing 1.18px
                 
                 @media screen and (max-width 1280px)
                     font-size 16px
@@ -151,7 +154,7 @@ div.header
 .divider
     width 2px
     height 120px
-    background-color $black
+    background-color #231f20
     
     @media screen and (min-height 1000px) and (min-width 1300px)
         height 240px
@@ -207,7 +210,7 @@ div.container.container--container-outer#form-section
                 
             input[type='email'], input[type='text']
                 background-color $black
-                border 2px solid $grey
+                border 1px solid $grey
                 border-radius 2px
                 box-shadow 0 0 5px rgba(255, 255, 255, 0.75)
                 width 60%
@@ -294,6 +297,7 @@ div.container.container--container-outer#footer
 
         span, a
             color $grey
+            font-size 12px
             
         div.divider-small
             height 18px
