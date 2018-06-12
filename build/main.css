@@ -366,6 +366,8 @@ div.container.container--container-outer#form-section div.container.container--c
   padding: 7px 10px;
   font-weight: bold;
   font-size: 14px;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 div.container.container--container-outer#form-section div.container.container--container-inner form input[type='submit'][disabled='disabled'] {
   background-color: #8f8888;
@@ -429,6 +431,7 @@ div.container.container--container-outer#where div.container.container--containe
     -webkit-justify-content: center;
     justify-content: center;
     margin-top: 0;
+    width: 100%;
   }
   div.container.container--container-outer#where div.container.container--container-inner div.logo-container img {
     margin-top: 30px;
