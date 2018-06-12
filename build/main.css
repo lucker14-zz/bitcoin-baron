@@ -297,6 +297,11 @@ div.container.container--container-outer#form-section div.container.container--c
     padding: 4vh 0;
   }
 }
+@media screen and (min-width: 1920px) and (min-height: 1000px) {
+  div.container.container--container-outer#form-section div.container.container--container-inner {
+    min-height: calc(55vh - 98px);
+  }
+}
 div.container.container--container-outer#form-section div.container.container--container-inner h2 {
   color: #ff0;
   font-size: 28px;
