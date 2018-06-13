@@ -170,6 +170,9 @@ div.header
 div.container.container--container-outer#form-section
     div.container.container--container-inner
         
+        @media screen and (max-height 800px)
+            padding 35px 0
+        
 
         justify-content center
         align-items flex-start
@@ -187,7 +190,7 @@ div.container.container--container-outer#form-section
             min-height calc(55vh - 98px)
 
         h2
-            color yellow
+            color $yellow
             font-size 28px
             font-weight 400
             
@@ -210,6 +213,7 @@ div.container.container--container-outer#form-section
                 
             input[type='email'], input[type='text']
                 background-color $black
+                color $grey
                 border 1px solid $grey
                 border-radius 2px
                 box-shadow 0 0 5px rgba(255, 255, 255, 0.75)
@@ -231,8 +235,8 @@ div.container.container--container-outer#form-section
                 -webkit-appearance none
                 border-radius 0
                 
-                &[disabled='disabled']
-                    background-color $grey
+                // &[disabled='disabled']
+                //     background-color $grey
                 
             div
                 margin-bottom 20px
@@ -246,6 +250,9 @@ div.container.container--container-outer#where
 
         @media screen and (max-width 500px) and (min-height 800px)
             min-height 200px
+            
+        @media screen and (max-height 800px)
+            padding 35px 0
             
         p
             color grey
@@ -283,10 +290,7 @@ div.container.container--container-outer#footer
         min-height 4vh
 
     div.container.container--container-inner
-        margin-top 13px
-        
-        @media screen and (max-width 800px)
-            margin-bottom 13px
+        padding 10px 0
         
         div.container.text-container--center
             @media screen and (max-width 500px)

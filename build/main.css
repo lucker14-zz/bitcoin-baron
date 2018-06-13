@@ -305,6 +305,11 @@ div.container.container--container-outer#form-section div.container.container--c
   align-items: flex-start;
   max-width: 640px;
 }
+@media screen and (max-height: 800px) {
+  div.container.container--container-outer#form-section div.container.container--container-inner {
+    padding: 35px 0;
+  }
+}
 @media screen and (max-width: 680px) {
   div.container.container--container-outer#form-section div.container.container--container-inner {
     max-width: 90%;
@@ -322,7 +327,7 @@ div.container.container--container-outer#form-section div.container.container--c
   }
 }
 div.container.container--container-outer#form-section div.container.container--container-inner h2 {
-  color: #ff0;
+  color: #f7d856;
   font-size: 28px;
   font-weight: 400;
 }
@@ -348,6 +353,7 @@ div.container.container--container-outer#form-section div.container.container--c
 div.container.container--container-outer#form-section div.container.container--container-inner form input[type='email'],
 div.container.container--container-outer#form-section div.container.container--container-inner form input[type='text'] {
   background-color: #000;
+  color: #8f8888;
   border: 1px solid #8f8888;
   border-radius: 2px;
   -webkit-box-shadow: 0 0 5px rgba(255,255,255,0.75);
@@ -372,9 +378,6 @@ div.container.container--container-outer#form-section div.container.container--c
   -webkit-appearance: none;
   border-radius: 0;
 }
-div.container.container--container-outer#form-section div.container.container--container-inner form input[type='submit'][disabled='disabled'] {
-  background-color: #8f8888;
-}
 div.container.container--container-outer#form-section div.container.container--container-inner form div {
   margin-bottom: 20px;
 }
@@ -386,6 +389,11 @@ div.container.container--container-outer#form-section div.container.container--c
 @media screen and (max-width: 500px) and (min-height: 800px) {
   div.container.container--container-outer#where div.container.container--container-inner {
     min-height: 200px;
+  }
+}
+@media screen and (max-height: 800px) {
+  div.container.container--container-outer#where div.container.container--container-inner {
+    padding: 35px 0;
   }
 }
 div.container.container--container-outer#where div.container.container--container-inner p {
@@ -454,12 +462,7 @@ div.container.container--container-outer#footer {
   }
 }
 div.container.container--container-outer#footer div.container.container--container-inner {
-  margin-top: 13px;
-}
-@media screen and (max-width: 800px) {
-  div.container.container--container-outer#footer div.container.container--container-inner {
-    margin-bottom: 13px;
-  }
+  padding: 10px 0;
 }
 @media screen and (max-width: 500px) {
   div.container.container--container-outer#footer div.container.container--container-inner div.container.text-container--center {
