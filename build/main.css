@@ -262,12 +262,17 @@ div.header--header-part h1 {
     font-size: 24px;
   }
 }
+@media screen and (max-height: 800px) {
+  div.header--header-part h1 {
+    font-size: 28px;
+  }
+}
 div.header--header-part div.absolute span {
   color: #fff;
   font-size: 20px;
   letter-spacing: 1.18px;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-height: 800px) {
   div.header--header-part div.absolute span {
     font-size: 16px;
   }
@@ -353,7 +358,7 @@ div.container.container--container-outer#form-section div.container.container--c
 div.container.container--container-outer#form-section div.container.container--container-inner form input[type='email'],
 div.container.container--container-outer#form-section div.container.container--container-inner form input[type='text'] {
   background-color: #000;
-  color: #8f8888;
+  color: #fff;
   border: 1px solid #8f8888;
   border-radius: 2px;
   -webkit-box-shadow: 0 0 5px rgba(255,255,255,0.75);
